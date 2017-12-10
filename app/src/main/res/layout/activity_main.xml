@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wissam.androiddataanalyser.MainActivity">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.85"
+                android:scrollbars="vertical" />
+
+        </LinearLayout>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>
